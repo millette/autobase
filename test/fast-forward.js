@@ -16,7 +16,7 @@ const {
   create
 } = require('./helpers')
 
-test('fast-forward - simple', async t => {
+test.solo('fast-forward - simple', async t => {
   t.plan(1)
 
   const store = new Corestore(await tmpDir(t), {
